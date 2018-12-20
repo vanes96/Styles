@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+    <title>заголовок сайта</title>
+    <meta name="description" content="Мета описание">
+    <meta name="keywords" content="Ключевые слова">
+</head>
+<body>
+    <a href="#modal" class="modal-video-popup">Видео тут</a>
+    <a href="#" class="overlay_det" id="modal"></a>
+    <div class="popup_det">
+        <div class="popup-inner-wrap">
+            <div class="popup-inner other-video-inner">
+                <video height="500" controls="controls">
+                    <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                </video>
+                <button class="roll-other" title="Свернуть окно"></button>
+                <button class="expand-other" title="На весь экран"></button>
+				<button class="small-other" title="Уменьшить"></button>
+            </div>
+            <div class="popup-inner self-video-inner">
+                <video height="300" controls="controls">
+                    <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                </video>
+                <button class="self-other" title="Свернуть окно"></button>
+            </div>
+        </div>
+        <!--<div class="popup-btn-wrap">
+            <div class="popup-btn-inner">
+                <button title="включить микрофон" class="microphone"></button>
+                <button title="отключить микрофон" class="no-microphone"></button>
+                <button title="включить видео" class="video"></button>
+                <button title="отключить видео" class="no-video"></button>
+                <button title="завершить звонок" class="no-phone"></button>
+            </div>
+        </div>   -->   
+    </div>
+    <button class="all-video-upp">Показать видео</button>
+    <button class="roll-upp">Развернуть окно</button>	
+    <button class="self-upp">Показать меня!</button>
+
+    <!--Плавающий блок-->
+    <div class="call-wrap">
+        <div class="call-inner">
+            <div class="popup-btn-wrap">
+                <div class="popup-btn-inner">
+                    <button title="включить микрофон" class="microphone"></button>
+                    <button title="отключить микрофон" class="no-microphone"></button>
+                    <button title="включить видео" class="video"></button>
+                    <button title="отключить видео" class="no-video"></button>
+                    <button title="принять звонок" class="phone"></button>			
+					<button title="завершить звонок" class="no-phone"></button>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Чат-->
+    <div class="chat-inner">
+        <button class="chat-btn-open">Открыть чат</button>
+        <div class="chat-window">
+            <div class="chat-window-inner">
+                <div class="chat-header">
+                    <div class="title">Имя собеседника</div>
+                    <div class="chat-btn-close" title="Свернуть"></div>
+                </div>
+                <ul class="messages">
+                    <li class="self">Здорова!</li>
+                    <li class="other">Привет</li>
+                    <li class="self">Длинное длинное сообщение набранное в порыве чувств!</li>
+                    <li class="other">Длинное длинное сообщение набранное в порыве чувств!</li>
+                    <li class="self">Здорова!</li>
+                    <li class="other">Привет</li>
+                    <li class="self">Здорова!</li>
+                    <li class="other">Привет</li>
+                    <li class="self">Здорова!</li>
+                </ul>
+                <div class="chat-footer">
+                    <textarea name="chat-messages" id="chat-messages" rows="2"></textarea>
+                    <button id="btn-send-message">Отправить</button>
+                </div>
+            </div>
+
+
+
+
+            <script src="script/jquery-3.3.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <script src="script/script.js"></script>
+</body>
+</html>
+
+
+
+
